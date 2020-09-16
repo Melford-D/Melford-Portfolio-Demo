@@ -3,9 +3,28 @@
 //         visibility: hidden;
 //     }
 // }
+@include media-sm {
+    .about__bio {
+        display: inline-block;
+    }
+    .social-icons {
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 10px;
+        bottom: 0.5em;
+    }
+   .contact__email{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 @include media-md {
     .menu-btn {
+        visibility: hidden;
+    }
+    .projects__bio-image {
         visibility: hidden;
     }
 

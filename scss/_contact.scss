@@ -25,10 +25,16 @@
         grid-template-columns: 1fr;
         grid-gap: 2rem;
         font-size: 1.5rem;
+        padding: 20px;
+        overflow-wrap: break-word;
     }
 
     .social-icons {
         position: initial;
         margin-top: 2rem;
     }
+}
+
+.fa-envelope {
+    margin-right: 3px;
 }

@@ -411,6 +411,8 @@
       grid-template-columns: 1fr;
   grid-gap: 2rem;
   font-size: 1.5rem;
+  padding: 20px;
+  overflow-wrap: break-word;
 }
 
 .contact .social-icons {
@@ -418,8 +420,35 @@
   margin-top: 2rem;
 }
 
+.fa-envelope {
+  margin-right: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .about__bio {
+    display: inline-block;
+  }
+  .social-icons {
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 10px;
+    bottom: 0.5em;
+  }
+  .contact__email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
+    visibility: hidden;
+  }
+  .projects__bio-image {
     visibility: hidden;
   }
   .nav {
@@ -514,8 +543,8 @@ main {
 
 main .social-icons {
   position: fixed;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: 0.3rem;
+  left: 0.3rem;
 }
 
 main .social-icons a {
@@ -531,8 +560,8 @@ main .social-icons a:hover {
 footer {
   font-size: 1rem;
   position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
+  bottom: -0.6rem;
+  right: -0.4rem;
   text-align: right;
   padding: 1rem;
   color: #fff;
